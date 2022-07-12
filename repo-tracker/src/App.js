@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import React, {useState} from 'react';
+import {API, DisplayData, UserData, SearchBar} from './Components'; 
 import './App.css';
 
 function App() {
+  const [apiData, setApiData] = useState([]);
+  const [userInput, setUserInput] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <SearchBar setUserInput={setUserInput}/>
+      <API userInput={userInput} setApiData={setApiData}/>
+      <UserData apiData={apiData}/>
+      <h1>test</h1>
+      <ul>
+        <DisplayData apiData={apiData}/>
+      </ul>
+    </>
   );
 }
 
