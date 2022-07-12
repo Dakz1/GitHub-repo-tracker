@@ -8,9 +8,9 @@ function DisplayData({apiData}){
         results.push(
             <li key={repo.id}>
                 <h1>{repo.name}</h1>
-                <h1>{repo.fork_count}</h1>
-                <h1>{repo.stargazers_count}</h1>
-                <h1>{repo.watchers_count}</h1>
+                <p>Forks: {repo.forks}</p>
+                <p>stargazers: {repo.stargazers_count}</p>
+                <p>watchers: {repo.watchers_count}</p>
             </li>
         )
     })

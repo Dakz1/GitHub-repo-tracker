@@ -11,7 +11,7 @@ function App() {
       <SearchBar setUserInput={setUserInput}/>
       <API userInput={userInput} setApiData={setApiData}/>
       <UserData apiData={apiData}/>
-      <h1>test</h1>
+      {apiData.length > 0 ? <h1>User Repositories</h1> : <h1></h1>}
       <ul>
         <DisplayData apiData={apiData}/>
       </ul>
