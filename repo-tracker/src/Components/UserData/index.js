@@ -9,7 +9,7 @@ function UserData({apiData}){
         return (
             <>
                 <h1 id="username">{userData.name}</h1>
-                <img id="avatar" src={userData.avatar}/>
+                <img id="avatar" src={userData.avatar} alt='github profile'/>
             </>
         )
     }

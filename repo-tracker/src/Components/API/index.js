@@ -1,4 +1,4 @@
-import React, {useEffect} from "react";
+import {useEffect} from "react";
 import axios from "axios";
 
 function API({userInput, setApiData}){
@@ -13,11 +13,11 @@ function API({userInput, setApiData}){
             setApiData(response.data);
         };
         
-        if(userInput != null && userInput != undefined && userInput != ""){
+        if(userInput !== null && userInput !== undefined && userInput !== ""){
             getData();
         }
 
-    }, [userInput]);
+    }, [userInput, setApiData]);
 }
 
 export default API;
