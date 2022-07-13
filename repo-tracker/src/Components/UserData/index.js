@@ -8,8 +8,8 @@ function UserData({apiData}){
 
         return (
             <>
-                <h1>{userData.name}</h1>
-                <img src={userData.avatar}/>
+                <h1 id="username">{userData.name}</h1>
+                <img id="avatar" src={userData.avatar}/>
             </>
         )
     }

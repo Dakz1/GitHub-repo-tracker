@@ -6,7 +6,7 @@ function DisplayData({apiData}){
 
     apiData.forEach(repo => {
         results.push(
-            <li key={repo.id}>
+            <li key={repo.id} className='repo'>
                 <h1>{repo.name}</h1>
                 <p>Forks: {repo.forks}</p>
                 <p>stargazers: {repo.stargazers_count}</p>

@@ -18,7 +18,6 @@ function API({userInput, setApiData}){
         }
 
     }, [userInput]);
-    
 }
 
 export default API;
