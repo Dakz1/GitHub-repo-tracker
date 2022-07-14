@@ -9,7 +9,7 @@ function SearchBar({setUserInput}){
 
     return (
         <form onSubmit={handleSubmit}>
-            <input type='text' name='userName' placeholder="GitHub UserName"></input>
+            <input required type='text' name='userName' placeholder="GitHub UserName"></input>
             <input type="submit" value="Submit"/>
         </form>
     )
