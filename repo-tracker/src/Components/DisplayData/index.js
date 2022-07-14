@@ -13,10 +13,10 @@ function DisplayData({apiData}){
                     }}>
                     <h1>{repo.name}</h1>
                     <div>
-                        <i className="fa-solid fa-code-fork"> {repo.forks} </i>
-                        <i className="fa-solid fa-star"> {repo.stargazers_count} </i> 
-                        <i className="fa-solid fa-eye"> {repo.watchers_count} </i> 
-                        <i className="fa-solid fa-bug"> {repo.open_issues} </i> 
+                        <i className="fa-solid fa-code-fork tooltip"> {repo.forks} <span class="tooltiptext">Fork count</span> </i>
+                        <i className="fa-solid fa-star tooltip"> {repo.stargazers_count} <span class="tooltiptext">stargazers</span> </i> 
+                        <i className="fa-solid fa-eye tooltip"> {repo.watchers_count} <span class="tooltiptext">Watchers</span> </i> 
+                        <i className="fa-solid fa-bug tooltip"> {repo.open_issues} <span class="tooltiptext">Open issues</span> </i> 
                     </div>
                 </li>
             );
