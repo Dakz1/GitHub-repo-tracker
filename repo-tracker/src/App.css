@@ -2,18 +2,13 @@ body{
   background-color: rgb(19, 23, 29);
   color: white;
   font-size: 16px;
+  text-align: center;
 }
 
 header{
   background-color: rgb(37, 45, 56);
-  height: 60px;
-  display: block;
-}
-
-#root{
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  height: 70px;
+  width: 100%;
 }
 
 .repo{
@@ -73,25 +68,22 @@ li div{
   text-decoration: underline;
 }
 
-form{
-  padding-top: 15px;
-}
-
 form input{
   color: white;
   background-color: rgb(19, 23, 29);
   border: solid rgba(255, 255, 255, 0.5) 1px;
   border-radius: 5px;
   padding: 5px;
-  width: 200px;
+  width: 260px;
   position: absolute;
+  top: 25px;
   left: 75px;
 }
 
 header i{
   position: absolute;
   left: 25px;
-  top: 10px;
+  top: 20px;
   font-size: 35px;
 }
 
