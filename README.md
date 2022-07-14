@@ -1,4 +1,4 @@
-#Github repo tracker
+# Github repo tracker
 
 Enter a Github username to see their available repo's
 
