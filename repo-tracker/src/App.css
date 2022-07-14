@@ -1,3 +1,15 @@
+body{
+  background-color: rgb(19, 23, 29);
+  color: white;
+  font-size: 16px;
+}
+
+header{
+  background-color: rgb(37, 45, 56);
+  height: 60px;
+  display: block;
+}
+
 #root{
   text-align: center;
   margin-left: auto;
@@ -21,21 +33,36 @@ li{
   padding: 2px;
   border-radius: 20px;
   cursor: pointer;
+  border: solid 2px rgba(255, 255, 255, 0.5);
 }
 
 li:hover{
   background-color: rgba(128, 128, 128, .5);
-  padding: 5px;
-  box-shadow: 5px 5px;
+  font-size: 17px;
 }
 
 li i{
+  padding-top: 15px;
   margin-left: 5%;
   margin-bottom: 2%;
 }
 
 li h1{
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 5px;
+  padding-bottom: 5px;
   text-align: center;
+}
+
+li div{
+  justify-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(19, 23, 29);
+  width: 100%;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 #avatar{
@@ -44,4 +71,26 @@ li h1{
 
 #username{
   text-decoration: underline;
+}
+
+form{
+  padding-top: 15px;
+}
+
+form input{
+  color: white;
+  background-color: rgb(19, 23, 29);
+  border: solid rgba(255, 255, 255, 0.5) 1px;
+  border-radius: 5px;
+  padding: 5px;
+  width: 200px;
+  position: absolute;
+  left: 75px;
+}
+
+header i{
+  position: absolute;
+  left: 25px;
+  top: 10px;
+  font-size: 35px;
 }
