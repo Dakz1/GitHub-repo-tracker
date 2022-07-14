@@ -5,6 +5,7 @@ function SearchBar({setUserInput}){
     function handleSubmit(e){
         e.preventDefault();
         setUserInput(e.target.userName.value);
+        e.target.userName.value = "";
     }
 
     return (
