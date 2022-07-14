@@ -12,9 +12,12 @@ function DisplayData({apiData}){
                         window.open(repo.html_url, '_blank');
                     }}>
                     <h1>{repo.name}</h1>
-                    <i className="fa-solid fa-code-fork"> {repo.forks} </i>
-                    <i className="fa-solid fa-star"> {repo.stargazers_count} </i> 
-                    <i className="fa-solid fa-eye"> {repo.watchers_count} </i> 
+                    <div>
+                        <i className="fa-solid fa-code-fork"> {repo.forks} </i>
+                        <i className="fa-solid fa-star"> {repo.stargazers_count} </i> 
+                        <i className="fa-solid fa-eye"> {repo.watchers_count} </i> 
+                        <i className="fa-solid fa-bug"> {repo.open_issues} </i> 
+                    </div>
                 </li>
             );
         });
